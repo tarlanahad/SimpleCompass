@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#514F4F"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/finishActivity"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:focusable="true"
+        android:src="@drawable/compass_cancel_icon" />
+
+
+    <TextView
+        android:id="@+id/bearingToLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/arrowView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="23sp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:id="@+id/arrowView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="@drawable/white_ring">
+
+
+        <RelativeLayout
+            android:id="@+id/arrow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="40dp"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/compassPin"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/compass_pin" />
+        </RelativeLayout>
+
+
+        <com.tarlanahad.simplecompass.Views.FontableTextView
+            android:id="@+id/fontableTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="N"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            app:typeface="Lato-Light.ttf" />
+
+    </RelativeLayout>
+
+
+    <com.tarlanahad.simplecompass.Views.FontableTextView
+        android:id="@+id/degreeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        app:typeface="Lato-Regular.ttf" />
+
+
+</RelativeLayout>
