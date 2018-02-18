@@ -4,7 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SimpleCompass.iml" filepath="$PROJECT_DIR$/SimpleCompass.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/library/library.iml" filepath="$PROJECT_DIR$/library/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-compass/library.iml" filepath="$PROJECT_DIR$/simple-compass/library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/simple-compass/simple-compass.iml" filepath="$PROJECT_DIR$/simple-compass/simple-compass.iml" />
     </modules>
   </component>
 </project>

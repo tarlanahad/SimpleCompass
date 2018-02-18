@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
 
+
 android {
     compileSdkVersion 26
 
@@ -16,14 +17,7 @@ android {
 
     }
 
-    signingConfigs {
-        testConfig{
-            storeFile file("/home/tarlan/Documents/Android Projects/tarlanahad.jks")
-            storePassword "Tarlan123"
-            keyAlias "key0"
-            keyPassword "Tarlan123"
-        }
-    }
+
 
     buildTypes {
         release {
